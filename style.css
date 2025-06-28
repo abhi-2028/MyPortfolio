@@ -25,8 +25,15 @@ body{
      font-size: 3.4rem;
 }
 
+.hero_section_btn{
+    margin-top: 2rem;
+    position: relative;
+    left: 15%;
+}
+
 .resume_section{
     margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .res_skills{
