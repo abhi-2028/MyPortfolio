@@ -11,18 +11,51 @@
 </head>
 
 <body>
-    <!-- Main Hero Section -->
-    <div class="hero_section">
-        <h1 class="hero_name text">I'am Abhirup</h1>
-        <h2 class="hero_sub text">A <span style="color: brown;">Pro</span>grammer</h2>
-        <div class="hero_section_btn">
-            <button class="btn btn-outline-light btn-lg hero_contact">Contact me</button>
+    <!-- Nav bar -->
+    <section id="header">
+        <div class="header width=" 40" height="32"">
+            <header class=" d-flex flex-wrap justify-content-center py-3 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <h1 class="display-6 fw-bold lh-1 mx-3">Portfolio</h1> </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active bg-dark" aria-current="page"
+                        style="color: white;">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link ">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+            </header>
         </div>
-    </div>
+    </section>
+    <!-- Main Hero Section -->
+    <section id="title" class="gradient-background">
+        <div class="container col-xxl-8 px-1 py-5" bis_skin_checked="1">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5" bis_skin_checked="1">
+                <div class="col-10 col-sm-8 col-lg-6" bis_skin_checked="1"> <img class="hero_img"
+                        src="./assets/main-img.jpg" class="d-block mx-lg-auto" alt="Bootstrap Themes" height="800"
+                        loading="lazy">
+                </div>
+                <div class="col-lg-6" bis_skin_checked="1">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 hero_name text">I'm Abhirup</h1>
+                    <h2 class="display-5 fw-bold lh-1 mb-3 hero_sub text">A <span
+                            style="color: brown;">Pro</span>grammer</h2>
+                    <p class="lead text">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s
+                        most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                        system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start" bis_skin_checked="1"> <button
+                            type="button" class="btn btn-light btn-lg px-4 me-md-2">Contact</button> <button
+                            type="button" class="btn btn-outline-light btn-lg px-4">About me</button> </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Resume page -->
-    <div class="resume_section">
+    <section class="resume_section">
         <div class="container px-1 py-5" id="icon-grid" bis_skin_checked="1">
-            <h2 class="pb-2 border-bottom res_skills">Skills</h2>
+            <h2 class="pb-2 border-bottom subhead__">Skills</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5 py-5" bis_skin_checked="1">
                 <div class="col d-flex align-items-start" bis_skin_checked="1"> <svg class="skill_html5"
                         xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -110,75 +143,96 @@
                         </path>
                     </svg>
                     <div bis_skin_checked="1">
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bootstrap 5</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start" bis_skin_checked="1"> <svg class="skill_git" xmlns="http://www.w3.org/2000/svg"
+                        x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                        <path
+                            d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                        </path>
+                    </svg>
+                    <div bis_skin_checked="1">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Git & Github</h3>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
+    </section>
+
     <!-- Project Page -->
+
     <div class="container px-4 py-5" id="custom-cards" bis_skin_checked="1">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
+        <h2 class="pb-2 border-bottom subhead__">Projects</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" bis_skin_checked="1">
             <div class="col" bis_skin_checked="1">
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-1.jpg');" bis_skin_checked="1">
+                    style="background-image: url('/assets/Project1Tindog.png');" bis_skin_checked="1">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" bis_skin_checked="1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                        <a href="https://abhi-2028.github.io/TinDog/" style="text-decoration: none; color: white">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TinDog - Dog's Love Life</h3>
+                        </a>
                         <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="me-auto"> <a href="https://abhi-2028.github.io/TinDog/"><img
+                                        src="./assets/icons/Tindoglogo.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white"></a> </li>
                             <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
                                     role="img" aria-label="Location">
                                     <use xlink:href="#geo-fill"></use>
-                                </svg> <small>Earth</small> </li>
+                                </svg> <small>15<sup>th</sup>June</small> </li>
                             <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
-                                    role="img" aria-label="Duration">
+                                    role="img" aria-label="Date">
                                     <use xlink:href="#calendar3"></use>
-                                </svg> <small>3d</small> </li>
+                                </svg> <small>2025</small> </a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col" bis_skin_checked="1">
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-2.jpg');" bis_skin_checked="1">
+                    style="background-image: url('./assets/Project2Spotify.png');" bis_skin_checked="1">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" bis_skin_checked="1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines
-                        </h3>
+                        <a href="https://abhi-2028.github.io/Spotify-Clone-HTML-CSS-/" style="text-decoration: none; color: white">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Spotify Clone - Music Player</h3>
+                        </a>
                         <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="me-auto"> <a href="https://abhi-2028.github.io/TinDog/"><img
+                                        src="./assets/icons/Spotify logo.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white"></a> </li>
                             <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
                                     role="img" aria-label="Location">
                                     <use xlink:href="#geo-fill"></use>
-                                </svg> <small>Pakistan</small> </li>
+                                </svg> <small>15<sup>th</sup>June</small> </li>
                             <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
-                                    role="img" aria-label="Duration">
+                                    role="img" aria-label="Date">
                                     <use xlink:href="#calendar3"></use>
-                                </svg> <small>4d</small> </li>
+                                </svg> <small>2025</small> </a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col" bis_skin_checked="1">
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('unsplash-photo-3.jpg');" bis_skin_checked="1">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1" bis_skin_checked="1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                    style="background-image: url('./assets/Project2Spotify.png');" bis_skin_checked="1">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" bis_skin_checked="1">
+                        <a href="https://abhi-2028.github.io/Spotify-Clone-HTML-CSS-/" style="text-decoration: none; color: white">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Spotify Clone - Music Player</h3>
+                        </a>
                         <ul class="d-flex list-unstyled mt-auto">
-                            <li class="me-auto"> <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li class="me-auto"> <a href="https://abhi-2028.github.io/TinDog/"><img
+                                        src="./assets/icons/Spotify logo.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white"></a> </li>
                             <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
                                     role="img" aria-label="Location">
                                     <use xlink:href="#geo-fill"></use>
-                                </svg> <small>California</small> </li>
+                                </svg> <small>15<sup>th</sup>June</small> </li>
                             <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
-                                    role="img" aria-label="Duration">
+                                    role="img" aria-label="Date">
                                     <use xlink:href="#calendar3"></use>
-                                </svg> <small>5d</small> </li>
+                                </svg> <small>2025</small> </a></li>
                         </ul>
                     </div>
                 </div>
