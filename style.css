@@ -63,8 +63,8 @@ body {
 
 .hero_img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    max-width: 70%;
+    height: 100%;
     margin-left: 0;
     margin-right: 0;
     border-radius: 20px;
@@ -73,9 +73,9 @@ body {
 
 @media (max-width: 766px) {
     .hero_img {
-        margin-left: 12%;
+        margin-left: 22%;
         margin-right: 0;
-        
+        max-width: 80%;
     }
 }
 
