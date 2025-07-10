@@ -89,6 +89,18 @@ html {
     /* width: fit-content; */
 }
 
+.resume-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(135deg, #ff8383, #ff4d4d);
+  color: white;
+}
+
 .hero_img {
     width: 100%;
     max-width: 70%;
