@@ -1,3 +1,5 @@
+// Text Animation
+
 const word = ["a Programmer", "a Web Developer","a Coder"];
 const typedTextSpan = document.querySelector(".typed_text");
 const cursorSpan = document.querySelector(".cursor");
