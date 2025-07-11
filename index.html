@@ -13,27 +13,37 @@
 
 <body>
     <!-- Nav bar -->
-    <section id="header">
-        <div class="header width=" 40" height="32">
-            <header
-                class="d-flex flex-wrap justify-content-center py-3 border-bottom bg-white position-fixed top-0 start-0 w-100 z-3">
-                <a href="#header"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <h1 class="display-6 fw-bold lh-1 mx-3">Portfolio</h1>
-                </a>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom position-sticky top-0 z-3">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+
+            <!-- Brand Name -->
+            <a href="#header" class="navbar-brand fw-bold text-dark ms-2">
+
+                <h1 class="display-6 fw-bold lh-1 mx-3">Portfolio</h1>
+            </a>
+
+            <!-- Hamburger icon for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav links -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#header" class="nav-link active bg-dark"
-                            style="color: white;">Home</a></li>
+                    <li class="nav-item"><a href="#header" class="nav-link active bg-dark text-white">Home</a></li>
                     <li class="nav-item"><a href="#aboutme_section" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#icon-grid" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#project_section" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#certificates_section" class="nav-link">Cirtificates</a></li>
+                    <li class="nav-item"><a href="#certificates_section" class="nav-link">Certificates</a></li>
                     <li class="nav-item"><a href="#contact_section" class="nav-link">Contact</a></li>
                 </ul>
-            </header>
+            </div>
 
         </div>
-    </section>
+    </nav>
+
     <!-- Main Hero Section -->
     <section id="title hero_section" class="gradient-background">
         <div class="container col-xxl-8 px-1 py-5" bis_skin_checked="1">
@@ -300,7 +310,8 @@
                     <div class="card-body">
                         <h5 class="card-title">DSA with Java</h5>
                         <p class="card-text">Issued by Apna College · July 2025</p>
-                        <a href="/cirtificates/certificate-sigma-70-683b0542b486128d080d455d (2).pdf" target="_blank" class="btn cert-btn">
+                        <a href="/cirtificates/certificate-sigma-70-683b0542b486128d080d455d (2).pdf" target="_blank"
+                            class="btn cert-btn">
                             📄 View Certificate
                         </a>
                     </div>

@@ -3,7 +3,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     /* Prevent horizontal scroll */
-    padding-top: 80px;
+    
 }
 
 html {
@@ -41,6 +41,11 @@ html {
 .nav-link:hover {
     color: red;
 }
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
 
 /* Part 1 */
 
