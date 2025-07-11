@@ -8,6 +8,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 .gradient-background {
@@ -162,3 +163,22 @@ html {
 .about_linkedIn {
     margin-left: 5px;
 }
+
+/* Cirtificates */
+
+.cert-btn {
+  border: 2px solid #ff4d4d;
+  color: #ff4d4d;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.cert-btn:hover {
+  background: #ff4d4d;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.6);
+  transform: scale(1.03);
+}
+
