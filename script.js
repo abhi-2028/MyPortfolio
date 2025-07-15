@@ -35,3 +35,6 @@ function erase(){
 document.addEventListener("DOMContentLoaded", function () {
     if (word.length) setTimeout(type, 1000);
 });
+
+Shery.mouseFollower();
+Shery.makeMagnet(".magnet");
