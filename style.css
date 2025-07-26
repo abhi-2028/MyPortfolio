@@ -6,6 +6,10 @@ body {
     
 }
 
+head .web_logo{
+    border-radius: 50%;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
