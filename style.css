@@ -187,3 +187,8 @@ html {
   transform: scale(1.03);
 }
 
+.card{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
