@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
+    "build": "npm install"
     "seed": "node scripts/seedPortfolio.js",
     "create-admin": "node scripts/createAdmin.js",
     "test": "vitest run",
