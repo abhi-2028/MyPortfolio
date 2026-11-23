@@ -1,0 +1,257 @@
+.gradient-background {
+  background: linear-gradient(300deg, #000000, gray, rgb(0, 0, 0));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.hero_landing {
+  min-height: 100svh;
+  background-color: #111827;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.12) 100%),
+    url('/assets/Focused Developer at Work (1).png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: none;
+}
+
+.hero_landing .container {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+}
+
+.hero_landing .row {
+  width: 100%;
+}
+
+.hero_landing .hero_img {
+  box-shadow: 0 0 35px 8px rgba(255, 255, 255, 0.35);
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.nav-link {
+  color: #000000;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+.navbar_landing {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  backdrop-filter: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.navbar_landing .navbar-brand,
+.navbar_landing .navbar-brand h1,
+.navbar_landing .nav-link {
+  color: white !important;
+}
+
+.navbar_landing .nav-link.active {
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: white !important;
+}
+
+.navbar_landing .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.55);
+  filter: invert(1);
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.text {
+  color: white;
+}
+
+.hero_name {
+  font-size: 5.5rem;
+}
+
+.hero_sub {
+  font-size: 3.4rem;
+}
+
+.resume-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(135deg, #ff8383, #ff4d4d);
+  color: white;
+}
+
+.hero_img {
+  width: 100%;
+  max-width: 70%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 10px white;
+}
+
+@media (max-width: 766px) {
+  .hero_landing {
+    min-height: calc(100svh - 58px);
+    background-position: 58% center;
+  }
+
+  .hero_landing .container {
+    min-height: 100svh;
+  }
+
+  .hero_img {
+    margin-left: 22%;
+    margin-right: 0;
+    max-width: 80%;
+  }
+
+}
+
+.resume_section {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.subhead__ {
+  font-size: 4rem;
+  color: rgb(196, 52, 52);
+}
+
+.skill_html5,
+.skill_java,
+.skill_bs,
+.skill_git {
+  width: 100px;
+  margin-right: 0.5rem;
+  margin-top: -10px;
+  flex-shrink: 0;
+}
+
+.skill_html5 {
+  height: 3.5rem;
+  margin-top: 10px;
+}
+
+.skill_css3 {
+  width: 150px;
+  height: 5rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.skill_js {
+  width: 200px;
+  height: 200px;
+  margin-right: 1rem;
+  margin-top: -60px;
+  flex-shrink: 0;
+}
+
+.about_linkedIn {
+  margin-left: 5px;
+}
+
+.cert-btn {
+  border: 2px solid #ff4d4d;
+  color: #ff4d4d;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.cert-btn:hover {
+  background: #ff4d4d;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.6);
+  transform: scale(1.03);
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.public-loading,
+.public-data-error {
+  min-height: 120px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.public-loading {
+  color: #6b7280;
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+.public-data-error {
+  margin: 16px auto;
+  max-width: 1320px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.project-detail-card {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.project-detail-cover {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
