@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import AOS from 'aos'
 import Navbar from '../../components/public/Navbar'
 import Hero from '../../components/public/Hero'
+import TickerStraps from '../../components/public/TickerStraps'
 import About from '../../components/public/About'
 import Skills from '../../components/public/Skills'
 import Projects from '../../components/public/Projects'
@@ -32,7 +33,30 @@ function PublicPortfolio() {
       })
     }
 
-    AOS.init()
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: false,
+    })
+
+    // "Jumped into the screen" IntersectionObserver
+    // Observes all text elements, headings, paragraphs, and cards
+    const jumpTargets = document.querySelectorAll('.jump-text, .jump-card')
+    const jumpObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-jumped')
+          }
+        })
+      },
+      {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px',
+      }
+    )
+
+    jumpTargets.forEach((target) => jumpObserver.observe(target))
 
     const magnets = document.querySelectorAll('.magnet')
     const cleanups = []
@@ -55,8 +79,11 @@ function PublicPortfolio() {
       })
     })
 
-    return () => cleanups.forEach((cleanup) => cleanup())
-  }, [])
+    return () => {
+      cleanups.forEach((cleanup) => cleanup())
+      jumpObserver.disconnect()
+    }
+  }, [portfolio.loading])
 
   useLayoutEffect(() => {
     if (portfolio.loading) return
@@ -95,6 +122,10 @@ function PublicPortfolio() {
           <div className="public-data-error" role="alert">{portfolio.error}</div>
         ) : null}
         <Hero profile={portfolio.profile} />
+        
+        {/* Infinite Ticker Straps: Eat Code Sleep Repeat + Infinite Skills */}
+        <TickerStraps skills={portfolio.skills} />
+        
         <About profile={portfolio.profile} />
         <Skills skills={portfolio.skills} />
         <Projects projects={portfolio.projects} />
